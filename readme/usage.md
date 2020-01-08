@@ -1,8 +1,8 @@
 ## Usage
 Use CDN to add stylesheet into your head section (using one with integrity hash could be a good practice):
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/krzysztofrewak/flat-flags-iconset/style.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/krzysztofrewak/flat-flags-iconset/style.css" integrity="SHA384_INTEGRITY_HASH" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/krzysztofrewak/flat-flags-iconset@latest/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/krzysztofrewak/flat-flags-iconset@latest/style.css" integrity="SHA384_INTEGRITY_HASH" crossorigin="anonymous">
 ```
 
 Now you can insert a flag via country's [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) code combined with `flat flag` CSS class:
