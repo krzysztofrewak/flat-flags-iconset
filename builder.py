@@ -42,7 +42,7 @@ with open("readme/index.md") as section:
 	index = ""
 	for c in data["countries"]:
 		template = "| ![{} icon](https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/{}.png) | {} | {} | {} |\n"
-		index += template.format(c["flag"], c["flag"], c["name"], c["iso"], ", ".join(map(lambda x: "`" + x.replace(" ", ".") + "`", c["classes"])))
+		index += template.format(c["flag"], c["flag"], c["name"], c["iso"], ", ".join(map(lambda x: "`" + x + "`", c["classes"])))
 	readme.write(index)
 
 readme.close()
