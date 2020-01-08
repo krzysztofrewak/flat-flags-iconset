@@ -21,5 +21,6 @@ file.close()
 
 sri = hashlib.sha384()
 sri.update(content.encode('utf-8'))
+sri = base64.b64encode(sri.digest()).decode()
 
-print("Integrity hash: sha384-" + sri.hexdigest())
+print("Integrity hash: sha384-" + sri)
