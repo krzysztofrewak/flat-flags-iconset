@@ -1,5 +1,5 @@
 import json
-
+import hashlib
 
 styles = "i.flat.flag { width: 18px; height: 12px; display: inline-block; background-size: 100% 100%; background-repeat: no-repeat; }"
 
@@ -13,6 +13,13 @@ with open("resources.json") as file:
 	for resource in data["flags"]:
 		styles += ", ".join(map(lambda x: "i.flat.flag." + x.replace(" ", "."), resource["classes"])) + " { background-image:url('./flags/" + resource["flag"] + ".png'); } "
 
+content = styles.replace(" ", "")
+
 file = open("style.css", "w")
-file.write(styles.replace(" ", ""))
+file.write(content)
 file.close()
+
+sri = hashlib.sha384()
+sri.update(content.encode('utf-8'))
+
+print("Integrity hash: sha384-" + sri.hexdigest())

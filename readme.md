@@ -5,7 +5,7 @@ This package is a simple semantic wrapper for Muharrem Senyil & Flatstudio's [Fl
 Use CDN to add stylesheet into your head section (using one with integrity hash could be a good practice):
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/krzysztofrewak/flat-flags-iconset/style.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/krzysztofrewak/flat-flags-iconset/style.css" integrity="sha384-F8TIp4gZcLMgQzp0kPGke+IbMcBMnk3tT5Kv+5sRY+6LqbPu/koC4+BLQh0/pOr3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/krzysztofrewak/flat-flags-iconset/style.css" integrity="sha384-af275b4dcd25e17bcc540a963419c9fb28986fe260c3cbb71e235a8c75fb906c3ea0ce5bc330bc4ce5cd6686631d6622" crossorigin="anonymous">
 ```
 
 Now you can insert a flag via country's [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) code combined with `flat flag` CSS class:
@@ -178,6 +178,7 @@ docker-compose run -w /application python python builder.py
 ![mt icon](https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/mt.png) | Malta | MT | `mt`, `malta`
 ![mu icon](https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/mu.png) | Mauritius | MU | `mu`, `mauritius`
 ![mv icon](https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/mv.png) | Maldives | MV | `mv`, `maldives`
+![mw icon](https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/mw.png) | Malawi | MW | `mw`, `malawi`
 ![mx icon](https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/mx.png) | Mexico | MX | `mx`, `mexico`
 ![my icon](https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/my.png) | Malaysia | MY | `my`, `malaysia`
 ![mz icon](https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/mz.png) | Mozambique | MZ | `mz`, `mozambique`
