@@ -237,7 +237,7 @@ docker-compose run -w /application python python builder.py
 ![tz icon](https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/tz.png) | Tanzania | TZ | `tz`, `tanzania`
 ![ua icon](https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/ua.png) | Ukraine | UA | `ua`, `ukraine`
 ![ug icon](https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/ug.png) | Uganda | UG | `ug`, `uganda`
-![us icon](https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/ys.png) | United States | YS | `us`, `united states`, `us`
+![us icon](https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/us.png) | United States | YS | `us`, `united states`, `us`
 ![uy icon](https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/uy.png) | Uruguay | UY | `uy`, `uruguay`
 ![uz icon](https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/uz.png) | Uzbekistan | UZ | `uz`, `uzbekistan`
 ![va icon](https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/va.png) | Holy See | VA | `va`, `vatican`, `holy see`
