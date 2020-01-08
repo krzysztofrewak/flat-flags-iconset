@@ -8,7 +8,7 @@ Use CDN to add stylesheet into your head section (using one with integrity hash 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/krzysztofrewak/flat-flags-iconset/style.css" integrity="sha384-rydbTc0l4XvMVAqWNBnJ+yiYb+Jgw8u3HiNajHX7kGw+oM5bwzC8TOXNZoZjHWYi" crossorigin="anonymous">
 ```
 
-Now you can insert a flag via country's [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) code combined with `flat flag` CSS class:
+Now you can insert a flag via country's [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) code combined with `flat flag` CSS class:
 ```html
 <i class="is flat flag"></i>
 <i class="md flat flag"></i>

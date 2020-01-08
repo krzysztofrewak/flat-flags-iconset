@@ -11,15 +11,39 @@ styles += "i.giant.flat.flag, .giant.flat.flags > i.flat.flag { width: 72px; hei
 with open("resources.json") as file:
 	data = json.load(file)
 
-	for resource in data["flags"]:
-		styles += ", ".join(map(lambda x: "i.flat.flag." + x.replace(" ", "."), resource["classes"])) + " { background-image:url('./flags/" + resource["flag"] + ".png'); } "
+	for country in data["countries"]:
+		styles += ", ".join(map(lambda x: "i.flat.flag." + x.replace(" ", "."), country["classes"])) + " { background-image:url('./flags/" + country["flag"] + ".png'); } "
 
 content = styles.replace(" ", "")
 
 file = open("style.css", "w")
 file.write(content)
 file.close()
+print("File style.css has been updated.")
 
 sri = hashlib.sha384()
 sri.update(content.encode("utf-8"))
-print("Integrity hash: sha384-" + base64.b64encode(sri.digest()).decode())
+sri = "sha384-" + base64.b64encode(sri.digest()).decode()
+print("Integrity hash: " + sri)
+
+readme = open("readme.md", "w")
+
+with open("readme/about.md") as section:
+	readme.write(section.read())
+
+with open("readme/usage.md") as section:
+	readme.write(section.read().replace("SHA384_INTEGRITY_HASH", sri))
+
+with open("readme/development.md") as section:
+	readme.write(section.read())
+
+with open("readme/index.md") as section:
+	readme.write(section.read())
+	index = ""
+	for c in data["countries"]:
+		template = "| ![{} icon](https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/{}.png) | {} | {} | {} |\n"
+		index += template.format(c["flag"], c["flag"], c["name"], c["iso"], ", ".join(map(lambda x: "`" + x.replace(" ", ".") + "`", c["classes"])))
+	readme.write(index)
+
+readme.close()
+print("File readme2.md has been updated.")
