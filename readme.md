@@ -5,7 +5,7 @@ This package is a simple semantic wrapper for Muharrem Senyil & Flatstudio's [Fl
 Use CDN to add stylesheet into your head section (using one with integrity hash could be a good practice):
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/krzysztofrewak/flat-flags-iconset/style.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/krzysztofrewak/flat-flags-iconset/style.css" integrity="sha384-af275b4dcd25e17bcc540a963419c9fb28986fe260c3cbb71e235a8c75fb906c3ea0ce5bc330bc4ce5cd6686631d6622" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/krzysztofrewak/flat-flags-iconset/style.css" integrity="sha384-rydbTc0l4XvMVAqWNBnJ+yiYb+Jgw8u3HiNajHX7kGw+oM5bwzC8TOXNZoZjHWYi" crossorigin="anonymous">
 ```
 
 Now you can insert a flag via country's [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) code combined with `flat flag` CSS class:

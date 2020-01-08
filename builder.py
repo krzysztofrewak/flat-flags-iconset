@@ -1,3 +1,4 @@
+import base64
 import json
 import hashlib
 
@@ -20,7 +21,5 @@ file.write(content)
 file.close()
 
 sri = hashlib.sha384()
-sri.update(content.encode('utf-8'))
-sri = base64.b64encode(sri.digest()).decode()
-
-print("Integrity hash: sha384-" + sri)
+sri.update(content.encode("utf-8"))
+print("Integrity hash: sha384-" + base64.b64encode(sri.digest()).decode())
