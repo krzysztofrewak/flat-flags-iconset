@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Flags</title>
+        <link href="./style.css" rel="stylesheet">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <body class="container my-4 mx-auto">
+        <div id="application">
+            <table class="w-full">
+                <thead>
+                    <tr class="text-left">
+                        <th class="">Flag</th>
+                        <th>Selectors</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="country in countries">
+                        <td class="">
+                            <i class="giant flat flag icon" :class="country.classes[0]"></i>
+                        </td>
+                        <td>
+                            <span class="font-mono text-sm p-2 block" v-for="c in country.classes">
+                                {{ c }} <span class="text-gray-500">flat flag icon</span>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: "#application",
+            data() {
+                return {
+                    countries: []
+                }
+            },
+            mounted() {
+                fetch("./resources.json").then(response => response.json()).then(data => {
+                    this.countries = data.countries
+                })
+            }
+        })
+    </script>
+</html>
