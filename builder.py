@@ -46,4 +46,4 @@ with open("readme/index.md") as section:
 	readme.write(index)
 
 readme.close()
-print("File readme2.md has been updated.")
+print("File readme.md has been updated.")
